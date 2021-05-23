@@ -9,12 +9,13 @@
 
 ## Install
 
-- git clone 
+- git clone git@github.com:dimadimx/didicode.git
 - composer install
 - cp .env.example .env
 - ./vendor/bin/sail up
-- php artisan migrate  
-- php artisan migrate  
+- ./vendor/bin/sail php artisan migrate
+- ./vendor/bin/sail php artisan db:seed
+- ./vendor/bin/sail php artisan key:generate
 - http://localhost:81
 ## About Laravel
 
