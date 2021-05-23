@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/view3d', 'View3dController@index')->name('view3d.index');
+Route::get('/xml', 'XmlController@index')->name('xml.index');
+Route::get('/soap', 'SoapController@index')->name('soap.index');
